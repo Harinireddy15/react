@@ -1,0 +1,49 @@
+import React from 'react';
+
+import mango from '../images/mango.jpg';
+import banana from '../images/banana.jpg';
+import orange from '../images/orange.jpg';
+import apple from '../images/apple.jpg';
+function Cart(props) {
+    return (
+        <div className="container">
+            <div className="image">
+                <img src={apple} alt="Apple" />
+                <h3>Apple</h3>
+                <h3>$20.00</h3>
+                <a href="">Add to cart</a>
+                <button className="Add btn-space" type="submit" >Add</button>
+                <button className="delete btn-space" type="submit" >Delete</button>
+                </div>
+               <br />
+                <div className="image">
+                <img src={banana} alt="Banana" />
+                <h3>Banana</h3>
+                <h3>$10.00</h3>
+                <a href="">Add to cart</a>
+                <button className="Add btn-space" type="submit" >Add</button>
+                <button className="delete btn-space" type="submit" >Delete</button>
+                </div>
+             
+                <div className="image">
+                <img src={mango} alt="Mango" />
+                <h3>Mango</h3>
+                <h3>$60.00</h3>
+                <a href="">Add to cart</a>
+                <button className="Add btn-space" type="submit" >Add</button>
+                <button className="delete btn-space" type="submit" >Delete</button>
+                </div>
+              
+                <div className="image">
+                <img src={orange} alt="Orange" />
+                <h3>Orange</h3>
+                <h3>$40.00</h3>
+                <a href="">Add to cart</a>
+                <button className="Add btn-space" type="submit" >Add</button>
+                <button className="delete btn-space" type="submit" >Delete</button>
+                </div>
+               </div>
+    );
+}
+
+export default Cart;
